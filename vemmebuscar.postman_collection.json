@@ -19,15 +19,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"customerName\":\"Ignacio\",\n\t\"customerEmail\":\"ignaciovl.j@gmail.com\",\n\t\"passport\" : \"A3049F0X\",\n\t\"phoneNumber\" : \"+56978459382\",\n    \"countryDestination\" : \"chile\",\n    \"comuneDestination\" : \"la reina\",\n    \"regionDestination\" : \"santiago\",\n    \"fullAddress\" : \"direccion x de la reina que nos proporciona el mapa\",\n    \"adults\" : 1,\n    \"babies\" : 0,\n    \"children\" : 6,\n    \"arrival\": \"FROM_AIRPORT\",\n    \"vanType\": \"EXCLUSIVE\",\n    \"companyName\" : \"name of the company\",\n    \"flightNumber\": 123567,\n    \"transferLocalDateTime\" : \"2019-04-01 17:40\"\n}"
+					"raw": "{\n\t\"customerName\":\"Ignacio\",\n\t\"customerEmail\":\"ignaciovl.j@gmail.com\",\n\t\"passport\" : \"A3049F0X\",\n\t\"phoneNumber\" : \"+56978459382\",\n    \"countryDestination\" : \"chile\",\n    \"comuneDestination\" : \"la reina\",\n    \"regionDestination\" : \"santiago\",\n    \"fullAddress\" : \"direccion x de la reina que nos proporciona el mapa\",\n    \"adults\" : 1,\n    \"babies\" : 0,\n    \"children\" : 6,\n    \"arrival\": \"FROM_AIRPORT\",\n    \"vanType\": \"EXCLUSIVE\",\n    \"companyName\" : \"name of the company\",\n    \"flightNumber\": 123567,\n    \"transferLocalDateTime\" : \"2019-10-01 17:40\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8081/transfer/exclusive/oneWayTrip",
+					"raw": "http://localhost:8999/transfer/exclusive/oneWayTrip",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8081",
+					"port": "8999",
 					"path": [
 						"transfer",
 						"exclusive",
