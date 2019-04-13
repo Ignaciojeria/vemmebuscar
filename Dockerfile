@@ -28,6 +28,6 @@ EXPOSE 8999
 
 RUN mkdir app
 
-COPY ./vemmebuscar-0.0.1-SNAPSHOT /app
+COPY ./vemmebuscar-0.0.1-SNAPSHOT.jar /app
 
 ENTRYPOINT ["java","--add-opens", "java.base/java.lang=ALL-UNNAMED", "-Xmx256m", "-Xms128m","-jar","app/vemmebuscar-0.0.1-SNAPSHOT.jar","& disown"]
