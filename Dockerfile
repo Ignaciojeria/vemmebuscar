@@ -26,6 +26,8 @@ ENV APP_TIMEZONE=America/Santiago
 
 EXPOSE 8999
 
+EXPOSE 465
+
 RUN mkdir app
 
 COPY ./vemmebuscar-0.0.1-SNAPSHOT.jar /app
