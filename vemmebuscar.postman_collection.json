@@ -19,22 +19,17 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"customerName\":\"Ignacio\",\n\t\"customerEmail\":\"ignaciovl.j@gmail.com\",\n\t\"passport\" : \"A3049F0X\",\n\t\"phoneNumber\" : \"+56978459382\",\n    \"countryDestination\" : \"chile\",\n    \"comuneDestination\" : \"la reina\",\n    \"regionDestination\" : \"santiago\",\n    \"fullAddress\" : \"direccion x de la reina que nos proporciona el mapa\",\n    \"adults\" : 1,\n    \"babies\" : 0,\n    \"children\" : 6,\n    \"arrival\": \"FROM_AIRPORT\",\n    \"companyName\" : \"name of the company\",\n    \"flightNumber\": 123567,\n    \"transferLocalDateTime\" : \"2019-10-01 17:40\",\n    \"wheelchair\": true,\n    \"additionalServices\" : \"nada adicional\",\n    \"trip\" : \"ONE_WAY_TRIP\"\n}"
+					"raw": "{\n\t\"customerName\":\"Ignacio\",\n\t\"customerEmail\":\"ignaciovl.j@gmail.com\",\n\t\"passport\" : \"A3049F0X\",\n\t\"phoneNumber\" : \"+56978459382\",\n    \"countryDestination\" : \"chile\",\n    \"comuneDestination\" : \"la reina\",\n    \"regionDestination\" : \"Región Metropolitana\",\n    \"fullAddress\" : \"direccion x de la reina que nos proporciona el mapa\",\n    \"adults\" : 1,\n    \"babies\" : 0,\n    \"children\" : 6,\n    \"arrival\": \"TO_AIRPORT\",\n    \"companyId\" : 2,\n    \"flightNumber\": \"ABC123567\",\n    \"transferLocalDateTime\" : \"2019-10-23 17:40\",\n    \"returnLocalDateTime\" : \"2019-12-20 17:40\",\n    \"wheelchair\": true,\n    \"babychair\": true,\n    \"additionalServices\" : \"nada adicional\",\n    \"trip\" : \"ROUND_TRIP\"\n}"
 				},
 				"url": {
-					"raw": "http://vemmebuscarx-vemmebuscar.7e14.starter-us-west-2.openshiftapps.com /transfer/exclusive/oneWayTrip",
-					"protocol": "http",
+					"raw": "localhost:8999/transfer/exclusive",
 					"host": [
-						"vemmebuscarx-vemmebuscar",
-						"7e14",
-						"starter-us-west-2",
-						"openshiftapps",
-						"com "
+						"localhost"
 					],
+					"port": "8999",
 					"path": [
 						"transfer",
-						"exclusive",
-						"oneWayTrip"
+						"exclusive"
 					]
 				}
 			},
@@ -54,23 +49,18 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"countryDestination\" : \"chile\",\n    \"comuneDestination\" : \"la reina\",\n    \"regionDestination\" : \"santiago\",\n    \"adults\" : 1,\n    \"babies\" : 0,\n    \"children\" : 6,\n    \"arrival\": \"FROM_AIRPORT\",\n    \"trip\" : \"ONE_WAY_TRIP\"\n}"
+					"raw": "{\n    \"countryDestination\" : \"chile\",\n    \"comuneDestination\" : \"macul\",\n    \"regionDestination\" : \"Región Metropolitana\",\n    \"adults\" : 30,\n    \"babies\" : 0,\n    \"children\" : 0,\n    \"arrival\": \"FROM_AIRPORT\",\n    \"trip\" : \"ONE_WAY_TRIP\"\n}"
 				},
 				"url": {
-					"raw": "http://vemmebuscarx-vemmebuscar.7e14.starter-us-west-2.openshiftapps.com/transfer/exclusive/oneWayTrip/cost",
-					"protocol": "http",
+					"raw": "localhost:8999/transfer/exclusive/price",
 					"host": [
-						"vemmebuscarx-vemmebuscar",
-						"7e14",
-						"starter-us-west-2",
-						"openshiftapps",
-						"com"
+						"localhost"
 					],
+					"port": "8999",
 					"path": [
 						"transfer",
 						"exclusive",
-						"oneWayTrip",
-						"cost"
+						"price"
 					]
 				}
 			},
@@ -96,15 +86,11 @@
 					"raw": "{\n    \"countryDestination\" : \"chile\",\n    \"comuneDestination\" : \"la reina\",\n    \"regionDestination\" : \"santiago\",\n    \"adults\" : 1,\n    \"babies\" : 0,\n    \"children\" : 6,\n    \"arrival\": \"FROM_AIRPORT\",\n    \"trip\" : \"ONE_WAY_TRIP\"\n}"
 				},
 				"url": {
-					"raw": "http://vemmebuscarx-vemmebuscar.7e14.starter-us-west-2.openshiftapps.com/company/findAll",
-					"protocol": "http",
+					"raw": "localhost:8999/company/findAll",
 					"host": [
-						"vemmebuscarx-vemmebuscar",
-						"7e14",
-						"starter-us-west-2",
-						"openshiftapps",
-						"com"
+						"localhost"
 					],
+					"port": "8999",
 					"path": [
 						"company",
 						"findAll"
